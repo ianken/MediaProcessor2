@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mediainfo version="0.7.97">
+<File>
+<track type="General">
+<Count>325</Count>
+<StreamCount>1</StreamCount>
+<StreamKind>General</StreamKind>
+<StreamKind_String>General</StreamKind_String>
+<StreamKindID>0</StreamKindID>
+<AudioCount>1</AudioCount>
+<Audio_Format_List>E-AC-3</Audio_Format_List>
+<Audio_Format_WithHint_List>E-AC-3</Audio_Format_WithHint_List>
+<Audio_Codec_List>AC3+</Audio_Codec_List>
+<CompleteName>D:\ATMOS-MUXED.mp4</CompleteName>
+<FolderName>D:</FolderName>
+<FileName>ATMOS-MUXED</FileName>
+<FileExtension>mp4</FileExtension>
+<Format>MPEG-4</Format>
+<Format_String>MPEG-4</Format_String>
+<Format_Extensions>mov mp4 m4v m4a m4b m4p 3ga 3gpa 3gpp 3gp 3gpp2 3g2 k3g jpm jpx mqv ismv isma ismt f4a f4b f4v</Format_Extensions>
+<Format_Commercial>MPEG-4</Format_Commercial>
+<Format_Profile>Base Media / Version 2</Format_Profile>
+<InternetMediaType>audio/mp4</InternetMediaType>
+<CodecID>mp42</CodecID>
+<CodecID_String>mp42 (mp42/dby1/isom)</CodecID_String>
+<CodecID_Url>http://www.apple.com/quicktime/download/standalone.html</CodecID_Url>
+<CodecID_Compatible>mp42/dby1/isom</CodecID_Compatible>
+<Codec>MPEG-4</Codec>
+<Codec_String>MPEG-4</Codec_String>
+<Codec_Extensions>mov mp4 m4v m4a m4b m4p 3ga 3gpa 3gpp 3gp 3gpp2 3g2 k3g jpm jpx mqv ismv isma ismt f4a f4b f4v</Codec_Extensions>
+<FileSize>453713077</FileSize>
+<FileSize_String>433 MiB</FileSize_String>
+<FileSize_String1>433 MiB</FileSize_String1>
+<FileSize_String2>433 MiB</FileSize_String2>
+<FileSize_String3>433 MiB</FileSize_String3>
+<FileSize_String4>432.7 MiB</FileSize_String4>
+<Duration>3541088</Duration>
+<Duration_String>59mn 1s</Duration_String>
+<Duration_String1>59mn 1s 88ms</Duration_String1>
+<Duration_String2>59mn 1s</Duration_String2>
+<Duration_String3>00:59:01.088</Duration_String3>
+<Duration_String5>00:59:01.088</Duration_String5>
+<OverallBitRate_Mode>CBR</OverallBitRate_Mode>
+<OverallBitRate_Mode_String>CBR</OverallBitRate_Mode_String>
+<OverallBitRate>1025025</OverallBitRate>
+<OverallBitRate_String>1025 Kbps</OverallBitRate_String>
+<StreamSize>453813</StreamSize>
+<StreamSize_String>443 KiB (0%)</StreamSize_String>
+<StreamSize_String1>443 KiB</StreamSize_String1>
+<StreamSize_String2>443 KiB</StreamSize_String2>
+<StreamSize_String3>443 KiB</StreamSize_String3>
+<StreamSize_String4>443.2 KiB</StreamSize_String4>
+<StreamSize_String5>443 KiB (0%)</StreamSize_String5>
+<StreamSize_Proportion>0.00100</StreamSize_Proportion>
+<HeaderSize>453805</HeaderSize>
+<DataSize>453259272</DataSize>
+<FooterSize>0</FooterSize>
+<IsStreamable>Yes</IsStreamable>
+<Encoded_Date>UTC 2018-06-15 20:38:27</Encoded_Date>
+<Tagged_Date>UTC 2018-06-15 20:38:27</Tagged_Date>
+<File_Created_Date>UTC 2018-06-15 20:38:29.875</File_Created_Date>
+<File_Created_Date_Local>2018-06-15 13:38:29.875</File_Created_Date_Local>
+<File_Modified_Date>UTC 2018-06-15 20:38:31.177</File_Modified_Date>
+<File_Modified_Date_Local>2018-06-15 13:38:31.177</File_Modified_Date_Local>
+</track>
+
+<track type="Audio">
+<Count>289</Count>
+<StreamCount>1</StreamCount>
+<StreamKind>Audio</StreamKind>
+<StreamKind_String>Audio</StreamKind_String>
+<StreamKindID>0</StreamKindID>
+<StreamOrder>0</StreamOrder>
+<ID>1</ID>
+<ID_String>1</ID_String>
+<Format>E-AC-3</Format>
+<Format_Info>Enhanced Audio Coding 3</Format_Info>
+<Format_Commercial>E-AC-3</Format_Commercial>
+<Format_Profile>E-AC-3+Atmos / E-AC-3</Format_Profile>
+<Format_Settings_Endianness>Big</Format_Settings_Endianness>
+<InternetMediaType>audio/eac3</InternetMediaType>
+<CodecID>ec-3</CodecID>
+<Codec>AC3+</Codec>
+<Codec_String>AC3+</Codec_String>
+<Codec_Family>AC3</Codec_Family>
+<Codec_Info>Dolby Ehanced AC3</Codec_Info>
+<Codec_CC>ec-3</Codec_CC>
+<Codec_Profile>E-AC-3+Atmos / E-AC-3</Codec_Profile>
+<Duration>3541088</Duration>
+<Duration_String>59mn 1s</Duration_String>
+<Duration_String1>59mn 1s 88ms</Duration_String1>
+<Duration_String2>59mn 1s</Duration_String2>
+<Duration_String3>00:59:01.088</Duration_String3>
+<Duration_String4>00:09:48:;5</Duration_String4>
+<Duration_String5>00:59:01.088 (00:09:48:;5)</Duration_String5>
+<BitRate_Mode>CBR</BitRate_Mode>
+<BitRate_Mode_String>CBR</BitRate_Mode_String>
+<BitRate>1024000</BitRate>
+<BitRate_String>1024 Kbps</BitRate_String>
+<Channel_s_>15 objects / 6</Channel_s_>
+<Channel_s__String>15 objects / 6 channel3</Channel_s__String>
+<ChannelPositions>15 objects / Front: L C R, Side: L R, LFE</ChannelPositions>
+<ChannelPositions_String2>15 objects</ChannelPositions_String2>
+<ChannelLayout>L C R LFE Ls Rs</ChannelLayout>
+<SamplesPerFrame>256</SamplesPerFrame>
+<SamplingRate>48000</SamplingRate>
+<SamplingRate_String>48.0 KHz</SamplingRate_String>
+<SamplingCount>169972224</SamplingCount>
+<FrameRate>187.500</FrameRate>
+<FrameRate_String>187.500 fps3 (256 SPF)</FrameRate_String>
+<FrameCount>110659</FrameCount>
+<Resolution>16</Resolution>
+<Resolution_String>16 bit3</Resolution_String>
+<BitDepth>16</BitDepth>
+<BitDepth_String>16 bit3</BitDepth_String>
+<Compression_Mode>Lossy</Compression_Mode>
+<Compression_Mode_String>Lossy</Compression_Mode_String>
+<StreamSize>453259264</StreamSize>
+<StreamSize_String>432 MiB (100%)</StreamSize_String>
+<StreamSize_String1>432 MiB</StreamSize_String1>
+<StreamSize_String2>432 MiB</StreamSize_String2>
+<StreamSize_String3>432 MiB</StreamSize_String3>
+<StreamSize_String4>432.3 MiB</StreamSize_String4>
+<StreamSize_String5>432 MiB (100%)</StreamSize_String5>
+<StreamSize_Proportion>0.99900</StreamSize_Proportion>
+<ServiceKind>CM</ServiceKind>
+<ServiceKind_String>Complete Main</ServiceKind_String>
+<Default>Yes</Default>
+<Default_String>Yes</Default_String>
+<AlternateGroup>2</AlternateGroup>
+<AlternateGroup_String>2</AlternateGroup_String>
+<Encoded_Date>UTC 2018-06-15 20:38:27</Encoded_Date>
+<Tagged_Date>UTC 2018-06-15 20:38:27</Tagged_Date>
+<bsid>16</bsid>
+<dialnorm>-26</dialnorm>
+<dialnorm>-26 dB</dialnorm>
+<compr>-0.28</compr>
+<compr>-0.28 dB</compr>
+<acmod>7</acmod>
+<lfeon>1</lfeon>
+<dialnorm_Average>-26</dialnorm_Average>
+<dialnorm_Average>-26 dB</dialnorm_Average>
+<dialnorm_Minimum>-26</dialnorm_Minimum>
+<dialnorm_Minimum>-26 dB</dialnorm_Minimum>
+<dialnorm_Maximum>-26</dialnorm_Maximum>
+<dialnorm_Maximum>-26 dB</dialnorm_Maximum>
+<dialnorm_Count>2</dialnorm_Count>
+</track>
+
+</File>
+</Mediainfo>
+

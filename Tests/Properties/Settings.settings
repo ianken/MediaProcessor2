@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Tests.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AtmosES" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\azvmfile\Engineer\TestSamples\LibMediaProcessorTest\ATMOS\ATMOS_ES.ec3</Value>
+    </Setting>
+    <Setting Name="AtmosESTC" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\azvmfile\Engineer\TestSamples\LibMediaProcessorTest\ATMOS\WithTimeCode.ec3</Value>
+    </Setting>
+    <Setting Name="Mov6Ch" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"\\azvmfile\Engineer\TestSamples\LibMediaProcessorTest\MOV\Big Buck Bunny\bbb_6Ch.mov"</Value>
+    </Setting>
+    <Setting Name="HDRMP4" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\azvmfile\Engineer\TestSamples\LibMediaProcessorTest\HDRMP4\FULLSMPTECOLORDATA.mp4</Value>
+    </Setting>
+    <Setting Name="Artifacts_CleanTelecine" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\azvmfile\Engineer\TestSamples\LibMediaProcessorTest\Artifacts\clean_telecine.avi</Value>
+    </Setting>
+    <Setting Name="Artifacts_Anamorphic_Letterbox" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\azvmfile\Engineer\TestSamples\LibMediaProcessorTest\Artifacts\Anamorphic_Letterboxed.mpg</Value>
+    </Setting>
+    <Setting Name="Artifacts_Letterbox_Noise" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\azvmfile\Engineer\TestSamples\LibMediaProcessorTest\Artifacts\Letterbox_Noise.mpg</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
