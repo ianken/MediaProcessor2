@@ -100,7 +100,7 @@ namespace Tests
         [TestCategory("Medium Duration - Less than 5 minutes")]
         public void FFMediaScanner_MEDIA_DETECT_LETTERBOX()
         {
-            var ma = new MediaProperties(Settings.Default.Artifacts_Anamorphic_Letterbox);
+            var ma = new MediaProperties("D:\\lbox.mkv");
             var scanner = new FFMediaScanner();
             scanner.DetectLetterbox(ma);
             Assert.IsTrue(ma.HasLetterbox);

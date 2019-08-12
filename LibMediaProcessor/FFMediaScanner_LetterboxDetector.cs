@@ -107,17 +107,15 @@ namespace LibMediaProcessor
                     }
                 }
             }
+            
+            //Group by Y then X extent of active picture area
+            var compositeGroup = cropValues.GroupBy(g => new { g.YExtent, g.XExtent});
+            
+            //Then order groups by count of elements
+            //Select the first element from the first group yielding the most common image size.
+            var commonResult = compositeGroup.OrderByDescending(g => g.Count()).First().First();
 
-            //Sort by YExtent...
-            var commonResult = cropValues.GroupBy(item => item.YExtent).OrderByDescending(g => g.Count()).Select(g => new
-            {
-                YExtent = g.Key,
-                g.First().YOffset,
-                g.First().XOffset,
-                g.First().XExtent
-             }).First();
-
-            return new CropValue(commonResult.YOffset,commonResult.YExtent,commonResult.YOffset,commonResult.XExtent);
+            return new CropValue(commonResult.YOffset, commonResult.YExtent, commonResult.YOffset, commonResult.XExtent);
         }
 
        
