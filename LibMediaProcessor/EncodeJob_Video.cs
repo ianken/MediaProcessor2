@@ -118,7 +118,9 @@ namespace LibMediaProcessor
         {
             //minimal job validation...
             this.Validate();
-
+            
+            //This is kinda hacky. 
+            //ToDo: seems like a good candidate for interfaces...
             switch (this.Encoder)
             {
                 case Encoders.FFVideoEncoder_x264:
