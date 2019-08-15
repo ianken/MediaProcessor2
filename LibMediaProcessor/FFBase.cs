@@ -33,16 +33,16 @@ namespace LibMediaProcessor
         //De-interlacing filters
 
         //Used when source is cleanly telecined. Decimate to film FPS 
-        public static readonly string DeintFilter_PureTelecine = "fieldmatch=order=auto:combmatch=full:combpel=80:cthresh=8,decimate";
+        protected static readonly string DeintFilter_PureTelecine = "fieldmatch=order=auto:combmatch=full:combpel=80:cthresh=8,decimate";
         //For mixed sources when video frame rate should be preserved. IE: old Anime that's a mess.
-        public static readonly string DeintFilter_VideoBias = "fieldmatch=order=auto:combmatch=full:combpel=90:cthresh=9,yadif=deint=interlaced";
+        protected static readonly string DeintFilter_VideoBias = "fieldmatch=order=auto:combmatch=full:combpel=90:cthresh=9,yadif=deint=interlaced";
         //For mixed sources where decimation is OK.
         //IE: media where opening and closing credits are combed video but feature is cleanly telecined.
-        public static readonly string DeintFilter_FilmBias = "fieldmatch=order=auto:combmatch=full:combpel=80:cthresh=8,decimate,yadif=deint=interlaced";
+        protected static readonly string DeintFilter_FilmBias = "fieldmatch=order=auto:combmatch=full:combpel=80:cthresh=8,decimate,yadif=deint=interlaced";
         //Used when source has no film telecine pattern - SD
-        public static readonly string DeintFilter_PureVideoSD = "yadif=1:0,mcdeint=0:0:10,framestep=2";
+        protected static readonly string DeintFilter_PureVideoSD = "yadif=1:0,mcdeint=0:0:10,framestep=2";
         //Used when source has no film telecine pattern - HD
-        public static readonly string DeintFilter_PureVideoHD = "yadif";
+        protected static readonly string DeintFilter_PureVideoHD = "yadif";
         
         //Callbacks for console output parsing
         private readonly Utilities.ProgressParser DefaultStdOutParser;
