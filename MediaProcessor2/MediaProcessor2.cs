@@ -18,7 +18,7 @@ namespace MediaProcessor2
             //MediaAttributes ma = new MediaAttributes(@"D:\TestMedia\NormalizerTest\SUB_BURN\TestSubs.mp4");
             //MediaAttributes ma = new MediaAttributes(@"D:\TestMedia\NormalizerTest\AudioCases\8xMono_Labeled.mov");
 
-            MediaProperties ma = new MediaProperties(@"D:\TestMedia\NONSQUARE\NON-Square-16-9.mkv");
+            MediaProperties ma = new MediaProperties(@"D:\\lbox.mkv");
 
             
             var scanner = new FFMediaScanner();
@@ -26,12 +26,14 @@ namespace MediaProcessor2
             //Scan two minutes at center of source...
             //These can run at the same time.
             
-            Parallel.Invoke
-            (
-                () => {scanner.DetectCombing(ma, Convert.ToInt32(ma.MediaDuration / 2 - 60), 120);},
-                () => {scanner.DetectLetterbox(ma, Convert.ToInt32(ma.MediaDuration / 2 - 60), 120);}
-            );
-            
+            //Parallel.Invoke
+           // (
+            //    () => {scanner.DetectCombing(ma, Convert.ToInt32(ma.MediaDuration / 2 - 60), 120);},
+           //     () => {scanner.DetectLetterbox(ma, Convert.ToInt32(ma.MediaDuration / 2 - 60), 120);}
+           // );
+
+            scanner.DetectLetterbox(ma, Convert.ToInt32(ma.MediaDuration / 2 - 15), 30);
+
             var VideoJob = new VideoEncodeJob("eng", "d:\\")
             {
                 GopLengthSeconds = 4,

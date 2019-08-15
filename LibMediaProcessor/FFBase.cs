@@ -11,7 +11,6 @@ namespace LibMediaProcessor
     public partial class FFBase
     {
         //Used by base and derived classes...
-        protected readonly ToolBin mediaTools;
         protected readonly Utilities utils;
 
         //MPEG files - these require special args to FFMPEG to ensure proper timecode behavior
@@ -57,7 +56,6 @@ namespace LibMediaProcessor
         public FFBase()
         {
             this.utils = new Utilities();
-            this.mediaTools = new ToolBin(this.utils);
             this.DefaultStdOutParser = this.FFStdOutParser;
             this.DefaultStdErrParser = this.FFStdErrParser;
         }
@@ -75,7 +73,7 @@ namespace LibMediaProcessor
             this.stdErrScan = "";
             this.stdOutScan = "";
 
-            this.utils.ExecuteCommand_Parser(this.mediaTools.FfEncPath, cmd, this.DefaultStdOutParser, this.DefaultStdErrParser);
+            this.utils.ExecuteCommand_Parser(this.utils.mediaTools.FfEncPath, cmd, this.DefaultStdOutParser, this.DefaultStdErrParser);
             return new ConsoleOutput(this.stdOutScan,this.stdErrScan);
         }
 

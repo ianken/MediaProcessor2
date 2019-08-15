@@ -8,7 +8,7 @@ namespace LibMediaProcessor
     /// that are called by LibMediaProcessor.
     /// </summary>
   
-    public class ToolBin
+    public class ToolBins
     {
         public string FfEncPath { get; private set; }
         public  string FfProbePath { get; private set; }
@@ -23,7 +23,7 @@ namespace LibMediaProcessor
         /// </summary>
         /// <param name="utilities">Optionally provide utilities helper</param>
         /// <param name="toolsRootPath"> Optionally override location of tools.</param>
-        public ToolBin(Utilities utilities = null, string toolsRootPath = null)
+        public ToolBins(Utilities utilities = null, string toolsRootPath = null)
         {
             var assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             var toolsRoot = toolsRootPath ?? Path.Combine(assemblyFolder, "TOOLS");

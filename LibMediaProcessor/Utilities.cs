@@ -48,8 +48,8 @@ namespace LibMediaProcessor
     /// </summary>
     public class Utilities
     {
-        //Need tools to fetch FONT info for FFMPEG.
-        private readonly ToolBin mediaTools;
+        //Locations of command line tools...
+        public readonly ToolBins mediaTools;
         //Callback for console parsing.
         public delegate void ProgressParser(object sendingProcess, DataReceivedEventArgs errLine);
 
@@ -65,7 +65,7 @@ namespace LibMediaProcessor
         public Utilities()
         {
             //Get tools
-            this.mediaTools = new ToolBin(this);
+            this.mediaTools = new ToolBins(this);
         }
 
         /// <summary>
@@ -201,7 +201,7 @@ namespace LibMediaProcessor
         }
 
         /// <summary>
-        /// Runs command and returns content of STDOUT
+        /// Runs command and returns content of STDOUT to the caller
         /// </summary>
         /// <param name="bin"> Executable to run.</param>
         /// <param name="args"> Arguments for executable.</param>
@@ -253,7 +253,7 @@ namespace LibMediaProcessor
         }
 
         /// <summary>
-        /// Verifies existence of file. Throws if it's missing
+        /// Runs command with output parsed by specified progress parsers
         /// </summary>
         /// <param name="bin">The executable to run.</param>
         /// <param name="args">Command line arguments.</param>

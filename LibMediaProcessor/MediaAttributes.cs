@@ -88,7 +88,7 @@ namespace LibMediaProcessor
         #endregion
 
         //Tools and utilities
-        private readonly ToolBin mediaTools = new ToolBin();
+        private readonly ToolBins mediaTools = new ToolBins();
         private readonly Utilities utils = new Utilities();
 
         //All streams in scanned media.
