@@ -9,8 +9,21 @@ namespace LibMediaProcessor
     /// Encode a single source video to N output streams using FFMPEG.
     /// Supports x264 and x265
     /// </summary>
-    public class FFVideoEncoder : FFBase
+    public class FFVideoEncoder : FFBase , IVideoEncoder
     {
+        public enum AvailableEncoders
+        {
+            x264,
+            x265
+        }
+
+        private AvailableEncoders enc;
+
+        public FFVideoEncoder(AvailableEncoders Enc)
+        {
+            enc = Enc;
+        }
+
         /// <summary>
         /// Process video encoding job
         /// </summary>
@@ -20,7 +33,7 @@ namespace LibMediaProcessor
             Parallel.ForEach(job.OutputMedia, (v, state, index) =>
                 {
                     this.utils.LogProxy($"\r\nStarting FFVideoEncoder instance {index}", Utilities.LogLevel.Info);
-                    this.EncodeX(v, job, this.EncoderMap[job.Encoder]);
+                    this.EncodeX(v, job, this.EncoderMap[enc]);
                 }
             );
         }

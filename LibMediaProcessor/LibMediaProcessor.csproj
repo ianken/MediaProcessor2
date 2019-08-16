@@ -57,6 +57,7 @@
     <Compile Include="FFFilterChainBuilder.cs" />
     <Compile Include="FFMediaScanner_InterlaceDetector.cs" />
     <Compile Include="FFVideoEncoder.cs" />
+    <Compile Include="IVideoEncoder.cs" />
     <Compile Include="OutputDefinition_Common.cs" />
     <Compile Include="OutputDefinition_Video.cs" />
     <Compile Include="VideoColorProperties.cs" />

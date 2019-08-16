@@ -5,7 +5,8 @@ namespace LibMediaProcessor
    
     public class VideoEncodeJob : EncodeJob
     {
-    
+        public IVideoEncoder Encoder { get; set; }
+
         public enum OutputColorSpec
         {
             Unknown = 0,
@@ -55,7 +56,6 @@ namespace LibMediaProcessor
         public decimal MatchRate { get; set; } = 0;
         //If set, this job requires subtitles be burned into all output video.
         public string BurnSubs { get; set; } = string.Empty;
-
         public OutputColorSpec ColorSpec { get; set; }
         public EncodeSpeed Preset { get; set; } = EncodeSpeed.Fast;
         public PixelFormat PixelFmt { get; set; } = PixelFormat.YUV420p;
@@ -118,21 +118,11 @@ namespace LibMediaProcessor
         {
             //minimal job validation...
             this.Validate();
-            
+
             //This is kinda hacky. 
             //ToDo: seems like a good candidate for interfaces...
-            switch (this.Encoder)
-            {
-                case Encoders.FFVideoEncoder_x264:
-                case Encoders.FFVideoEncoder_x265:
-                    var encoder = new FFVideoEncoder();
-                    encoder.Execute(this);
-                    break;
-                default:
-                    this.utils.LogProxy($"Specified encoder ID: \"{this.Encoder}\" not implemented.",
-                        Utilities.LogLevel.AppError);
-                    break;
-            }
+
+            Encoder.Execute(this);
         }
 
         /// <summary>
@@ -140,15 +130,6 @@ namespace LibMediaProcessor
         /// </summary>
         public void Validate()
         {
-            //Note: in the event that additional encoders are added, this check will need to be revised.
-            if (this.InputMedia[0].HasHDR && this.Encoder != Encoders.FFVideoEncoder_x265)
-            {
-                this.utils.LogProxy(
-                    $"Video source indicates HDR but selected encoder does not support it...",
-                    Utilities.LogLevel.AppError);
-
-            }
-
             //Input media may only have one video stream...
             if (this.InputMedia[0].VideoStreamCount != 1)
             {
@@ -157,16 +138,7 @@ namespace LibMediaProcessor
                     Utilities.LogLevel.AppError);
             }
 
-            //Per-stream encoder override is intended for audio encode jobs...
-            foreach (VideoOutputDefinition v in this.OutputMedia)
-            {
-                if (v.Encoder != Encoders.None)
-                {
-                    this.utils.LogProxy(
-                        $"Video encoding job does not support per-stream encoder overrides...",
-                        Utilities.LogLevel.AppError);
-                }
-            }
+            
         }
     }
 }

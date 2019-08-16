@@ -74,14 +74,14 @@ namespace LibMediaProcessor
 
             };
 
-        protected Dictionary<EncodeJob.Encoders, string> EncoderMap =
-            new Dictionary<EncodeJob.Encoders, string>()
+        protected Dictionary<FFVideoEncoder.AvailableEncoders, string> EncoderMap =
+            new Dictionary<FFVideoEncoder.AvailableEncoders, string>()
             {
                 {
-                    EncodeJob.Encoders.FFVideoEncoder_x264, "x264"
+                    FFVideoEncoder.AvailableEncoders.x264, "x264"
                 },
                 {
-                    EncodeJob.Encoders.FFVideoEncoder_x265, "x265"
+                    FFVideoEncoder.AvailableEncoders.x265, "x265"
                 }
             };
 

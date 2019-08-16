@@ -38,7 +38,7 @@ namespace MediaProcessor2
             {
                 GopLengthSeconds = 4,
                 LookAheadFrames = 48,
-                Encoder = EncodeJob.Encoders.FFVideoEncoder_x264,
+                Encoder = new FFVideoEncoder(FFVideoEncoder.AvailableEncoders.x265),
                 //ColorSpec = VideoEncodeJob.OutputColorSpec.REC709,
                 Preset = VideoEncodeJob.EncodeSpeed.Faster,
                 PixelFmt = VideoEncodeJob.PixelFormat.YUV420p10,
@@ -55,15 +55,15 @@ namespace MediaProcessor2
             //Define output streams
             VideoOutputDefinition vod = new VideoOutputDefinition
             {
-                Role = OutputDefinition.StreamRole.Download,
-                StreamName = "DTO_VIDEO_1",
                 Width = 852,
-                NumPasses = 1,
                 TargetBitrate = 1000,
                 PeakBitrate = 2000,
                 VBVBufferSize = 5000,
+                NumPasses = 1,
                 AllowSceneDetection = true,
-               
+
+                Role = OutputDefinition.StreamRole.Download,
+                StreamName = "DTO_VIDEO_1",
                 OutputFileName = "TestFile1_WOOT.mkv"
             };
            
